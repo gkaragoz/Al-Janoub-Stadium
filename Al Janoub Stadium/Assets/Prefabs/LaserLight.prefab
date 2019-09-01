@@ -48,7 +48,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 75159b891b8a89f4087288a8cbc88c8a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -69,8 +69,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: -8.77, z: -2.3335156}
+  - {x: 8, y: 0.0000064373016, z: 6.87}
+  - {x: 8, y: -5.37, z: 1.5000246}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -91,8 +91,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.16078432, g: 1, b: 0, a: 1}
-      key1: {r: 0.14509805, g: 1, b: 0, a: 1}
+      key0: {r: 0, g: 1, b: 0.043137256, a: 1}
+      key1: {r: 0, g: 1, b: 0.043137256, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -170,5 +170,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9605efca2ff241b46848cffb70be256d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startColor: {r: 0.16216493, g: 1, b: 0, a: 1}
-  _endColor: {r: 0.14686084, g: 1, b: 0, a: 1}
+  _startColor: {r: 0, g: 1, b: 0.04493475, a: 1}
+  _endColor: {r: 0, g: 1, b: 0.043137256, a: 1}
