@@ -4,19 +4,17 @@
 public class Laser : MonoBehaviour {
 
     [SerializeField]
-    private Color _color = Color.red;
+    private Color _startColor = Color.red;
+    [SerializeField]
+    private Color _endColor = Color.red;
 
     private LineRenderer _lr;
-    private Renderer _renderer;
-
-    private void Awake() {
-        _renderer = GetComponentInChildren<Renderer>();
-
-        _renderer.sharedMaterial.SetColor("_TintColor", _color);
-    }
 
     private void Start() {
         _lr = GetComponentInChildren<LineRenderer>();
+
+        _lr.startColor = _startColor;
+        _lr.endColor = _endColor;
     }
 
     private void Update() {
@@ -30,9 +28,11 @@ public class Laser : MonoBehaviour {
     }
 
     private void OnValidate() {
-        _renderer = GetComponentInChildren<Renderer>();
+        if (_lr == null)
+            _lr = GetComponentInChildren<LineRenderer>();
 
-        _renderer.sharedMaterial.SetColor("_TintColor", _color);
+        _lr.startColor = _startColor;
+        _lr.endColor = _endColor;
     }
 
 }
